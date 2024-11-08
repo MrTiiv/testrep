@@ -113,9 +113,13 @@ An sich sollte es sich fast von selber erklären wie das Radio zusammengebaut wi
 "base" und "shell" werden miteinander verschraubt, ich habe eine M3 Mutter in die "shell" geklebt und mit einer M3x8 Schraube verbinde ich dann "base" und "shell" auch so das es einfach wieder geöffnet werden kann.
 
 "antenne-holder" habe ich an die "shell" angeklebt
+
 "top-button" habe ich auch an die "shell" angeklebt
+
 "grill-left" und "grill-right" habe ich an "front-panel" angeklebt 
+
 "led-ring" habe ich auch an "front-panel" angeklebt
+
 "led-ark" habe ich in die dafür vorgesehenen löcher in der "base" mit blechschrauben eingeschraubt nachdem ich die LED's in die "led-ark" eingeklebt hatte. Ich habe nicht alle löcher vom "led-ark" mit LED's gefüllt, ich habe nur jedes zweite Loch verwendet und es ist trozdem hell genug. Auch habe ich erst alle LED's Parallel zusammengelötet bevor ich die ark in die Base eingeschraubt habe.
 
 Die Löcher für den ein/aus Schalter so wie das Loch für den Poti hinten und den Ladeport habe ich je nach Position reingebohrt. 
