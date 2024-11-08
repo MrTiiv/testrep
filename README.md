@@ -1,143 +1,176 @@
-﻿# Welcome to StackEdit!
+# Funktionierendes Portal Radio (remix von [@AIBot | MyMiniFactory](https://www.myminifactory.com/object/3d-print-portal-radio-50006) (GERMAN)
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+## Vorwort
+Zunächst ein Dank an:
+: @Aibot für die Druckdateien
+: @Astro_Flora für das Drucken von “Shell” und “Bottom” mit seinem Bambu Lab X1C 
+: @monion für das Helfen mit dem Code (er ist nicht verantwortlich für den endgültigen Code ;D )
+: @Chair Gaming für allgemeine Hilfe
 
+Hinweis: 
+Hier kannst du nur meine modifizierten Teile herunterladen. Bitte lade das komplette Projekt vom Original-Autor herunter! 
+[**https://www.myminifactory.com/object/3d-print-portal-radio-50006**](https://www.myminifactory.com/object/3d-print-portal-radio-50006)
+  
+## Allgemeine Informationen
+  
+**HIER KANNST DU NUR MEINE MODIFIZIERTEN PARTS HERUNERLADEN, BITTE LADE DAS KOMPLETTE PROJEKT VOM ORIGIALEN AUTOR HERUNTER!**  
+  
+Für die Elektronik habe ich mich an einer Anleitung für ein DIY-Radio von AZ-Delivery orientiert und es so angepasst, wie es für mich passt: [https://www.az-delivery.de/products/internet-radio-mit-dem-esp32](https://www.az-delivery.de/products/internet-radio-mit-dem-esp32).
 
-# Files
+Verwendete Drucker:
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+-   **Bambu Lab X1C und Bambu Lab A1 Mini**
+-   „Shell“ und „Base“ wurden mit dem Bambu Lab X1C gedruckt, können aber auch mit dem Bambu Lab A1 gedruckt werden. Beide haben eine Druckfläche von 256x256x256 mm.
+-   Kleinere Teile wurden mit dem Bambu Lab A1 Mini (Druckfläche 180x180x180 mm) gedruckt.
 
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
-
-
-# Synchronization
-
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+### - Bekannte Probleme
+Da dies mein erstes Projekt ist, kenne ich mich mit der verwendeten Mikroelektronik noch wenig aus. Ein nerviges Problem ist der DFPlayer. Beim Einschalten gibt er ein Störgeräusch von sich, bevor er den Song abspielt. Auch während des Songs ist ein leises, aber hörbares Störgeräusch vorhanden, insbesondere bei geringer Lautstärke. Bis jetzt habe ich dafür noch keine Lösung gefunden.
+Wenn man den Verstärker PAM8403 bis ganz an Ende zu dem Rastpunkt dreht und ihn dann wieder aufdreht Startet der Arduino aus unbekannten gründen neu. Ich habe das Problem bissher noch nicht behoben und habe bissher auch noch keinen Lösungsansatz.
+  
+## Das Portal Radio
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Portal%20Radio%20Front.jpg?raw=true)![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Portal%20Radio%20Back.jpg?raw=true)
 
 
-# Publication
+### Funktion
+  
+Das Radio soll folgende Funktionen erfüllen:
 
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
+-   Beim Einschalten leuchten die LEDs am Ring blau auf, die 7-Segment-Anzeige zeigt „85.2“ an, und die Radiomusik aus dem Spiel beginnt zu spielen.
+-   Die blaue LED an der Front leuchtet, sobald der Code „hochgefahren“ ist, als Indikator.
+-   Über einen Drehregler kann die Lautstärke eingestellt werden. Weitere Funktionen wie Songauswahl und Frequenzeinstellung sind geplant.
+  
+### Teileliste
+  
+Hier sind die Teile die ich für das Radio gekauft habe, eine Mischung vom Amazon und AliExpress:  
+  
+-[7 Segment Anzeige TM1637 Blau](https://www.amazon.de/dp/B09X1Z8CC8?ref=ppx_yo2ov_dt_b_fed_asin_title)  
+-[USB Typ C Batterielademodul TP4056](https://amzn.eu/d/bJx8FN1) [¹]
+-[Step Up Module MT3608](https://amzn.eu/d/h4YCcV0)  
+-[AZ Delivery Mikrocontroller AZ-ATmega 328](https://amzn.eu/d/12fmeU2)  
+-[2x AZ Delivery DFPlayer Mini 3 Watt Lautsprecher](https://amzn.eu/d/aCnC54G)  
+-[5mm LED Blau](https://amzn.eu/d/fTzluys)  
+-[DFPlayer Mini](https://de.aliexpress.com/item/1005006181511315.html?)  
+-[PAM8403 Audio Verstärker](https://de.aliexpress.com/item/1005006135778016.html)  
+-[JST XH 2 Polig Kabelstecker](https://de.aliexpress.com/item/1005006577211209.html) [²] 
+-[Wippschalter Rund](https://amzn.eu/d/0qvCGKB)  
+-[verwendeter Akku](https://www.conrad.de/de/p/reely-modellbau-akkupack-lipo-3-7-v-1000-mah-zellen-zahl-1-30-c-bec-2582341.html) [³]
+-[~350g PLA Schwarzes Filament](https://amzn.eu/d/ibRLTVA)
+-[~265g PLA Weißes Filament](https://amzn.eu/d/6HExSpr)
+-[~30g PLA Durchsichtiges Filament](https://amzn.eu/d/5HmzEyD)
+-[~2g PETG Schwarzes Filament](https://amzn.eu/d/5IXwTd8)[⁴]
+-Sekundenkleber (zum Ankleben der Elektronik so wie der LED's)
+-Blechschrauben (zum Anschrauben der Elektronik)
 
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
+[¹]: Vorsicht!, mit diesem Lademodul kann man nur mit einem USB A auf USB C Kabel laden, nicht mit einem USB C - USB C Kabel
+[²]: um den Akku und die Lautsprecher abtrennbar zu machen, ich habe die Originalen Stecker der jeweiligen Komponenten abgeschnitten und diesen angelötet, schlauer wäre gewesen gleich den Richtigen Stecker zu bestellen aber egal ^^
+[³]: alle Akkus die ich auf Amazon bestellt habe haben mit diesem Projekt nicht funktioniert. Der Akku war immer zu schwach und das Radio wurde bei hoher Lautstärke abgeschaltet. Deswegen der Reely Modellbauakku von Conrad.. eine Powerbank hätte es glaube ich auch getan
+[⁴]: Das PETG Filament ist für das Aperture Logo vorne am Radio damit man es sieht. Man sieht es mit dem PETG Filament zwar, es kommt aber tatsächlich drauf an wie man drauf schaut. Aufällig ist es nicht also kann man dafür auch anderes Filament z.b. in einer anderen Farbe verwenden.
 
-## Publish a File
+## 3D Druck 
 
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
+### Info und änderungen
+Abgeändert habe ich das *"front-panel"* damit das Display vorne rein passt so wie den *"top-button"* damit man den Knopf oben für die Lautstärke drehen kann und das der Audio Verstärker PAM8403 da Perfekt reinpasst. Diese änderungen kannst du hier auf GitHub herunterladen. 
+Dadurch das ich das Display in das Radio Montiert habe müssen folgende Teile die du von Aibot auf MMF herunterlädtst nicht gedruck werden:
+- "ledholder-screen"
+- "screen-main"
+- "screen-8-top"
+- "screen-8-bot"
 
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
+Außerdem habe ich "electronics-mount" und "front-logo-stencil-1" nicht gedruckt. Das Front Logo habe ich so angepasst das der Drucker das Logo mit vorne rein druckt. Aibot hat denke ich vorgesehen das man das Logo vorne Dransprüht mit dem "front-logo-stencil-1".
 
-## Update a publication
+### Druckereinstellungen
+Die Druckeinstellungen basieren alle auf **Bambu Studio**.
 
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
+-   **0,20 mm Standardprofil**, 15 % Fülldichte, Gitternetz-Füllmuster, Wandlinien: 2, Schichthöhe: 0,2 mm, keine Supports (außer für „Shell“).
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Default%20Print%20Settings.png?raw=true)
 
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
+### Base
 
-## Manage file publication
+Für die Base habe ich "base" genommen und nicht "base-with-holes-for-electronics-mount" da ich meine eigene Elektronik eingebaut habe.
+Folgende Druckeinstellungen habe ich bei der Base geändert:
 
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+- Fülldichte: 35 %, Füllmuster: Geradlinig, Wandlinien: 4 (für besseren Halt der Schrauben). 
+
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Print%20Settings%20Base.png?raw=true)
+
+### -Shell
+Die Shell muss mit Supports gedruckt werden. Verwendet wurden die Supports "Baum". 
+Bei der Druckbetthaftung habe ich die Schürzenschlaufen auf 5 und die Nahtposition auf zufällig. 
+
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Print%20Settings%20Shell.png?raw=true)
+
+### -Zusammenbau
+Nachdem alles gedruckt wurde sollte man 10 einzelne Teile vor sich liegen haben
+- "base"
+- "shell"
+- "antenne-holder"
+- "grill-left"
+- "grill-right"
+- "led-ark"
+- "led-ark-diffuser"
+- "led-ring"
+- "[front-panel](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Modified%203D%20Print%20Parts/front-panel-modified-for-displayl.stl)" (meine geänderte Version)
+- "[top-button](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Modified%203D%20Print%20Parts/top-button-modified-for-PAM8403.stl)" (meine geänderte Version)
+
+An sich sollte es sich fast von selber erklären wie das Radio zusammengebaut wird. 
+"base" und "shell" werden miteinander verschraubt, ich habe eine M3 Mutter in die "shell" geklebt und mit einer M3x8 Schraube verbinde ich dann "base" und "shell" auch so das es einfach wieder geöffnet werden kann.
+
+"antenne-holder" habe ich an die "shell" angeklebt
+"top-button" habe ich auch an die "shell" angeklebt
+"grill-left" und "grill-right" habe ich an "front-panel" angeklebt 
+"led-ring" habe ich auch an "front-panel" angeklebt
+"led-ark" habe ich in die dafür vorgesehenen löcher in der "base" mit blechschrauben eingeschraubt nachdem ich die LED's in die "led-ark" eingeklebt hatte. Ich habe nicht alle löcher vom "led-ark" mit LED's gefüllt, ich habe nur jedes zweite Loch verwendet und es ist trozdem hell genug. Auch habe ich erst alle LED's Parallel zusammengelötet bevor ich die ark in die Base eingeschraubt habe.
+
+Die Löcher für den ein/aus Schalter so wie das Loch für den Poti hinten und den Ladeport habe ich je nach Position reingebohrt. 
 
 
-# Markdown extensions
+## Die Elektronik
 
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+### Schaltplan
+Wie bereits am anfang erwähnt, habe ich die Elektronik von einer DIY Anleitung für ein Internetradio von AZ Delivery abgeschaut. Aber bevor ich die Elektronik verdrahtet und einegabut habe, habe ich mit der Software **Fritzing** einen Schaltplan erstellt den ich euch hier zur verfügung stelle. 
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Portal%20Radio%20Sketch%20V0.1%20Schematic.png?raw=true)==VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
+z.b. **`SoftwareSerial mySoftwareSerial(11, 10); // RX, TX`** funktioniert nicht du musst
+ **`SoftwareSerial mySoftwareSerial(10, 11); // RX, TX`** verwenden
+Also **RX = TX** und **TX = RX** (wieso auch immer?)==
 
+Der Schaltplan ist 1:1 zu meinem jetzigen Portal Radio.
+Das Step Up Module muss VOR dem einbauen eingestellt werden. Ich habe die ganze Elektronik gelötet, das Step Up Module hätte ich genau so wie den Akku und die Lautsprecher Steckbar machen sollen falls das Modul nochmal nachgestellt werden muss. Die Spannung habe ich mit Wago 221 Klemmen verteilt die ich auf der Base aufgeklebt habe (please don't judge me)
 
-## SmartyPants
+### - Das einbauen der Elektronik
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+An sich gibt es keine feste Position für die Elektronik, das muss man am ende selbst entscheiden.
+Ich habe den Charger und das Step-Up Module mit kleinen abstandshaltern wegen den Lötpunkten an der Base mit Sekundenkleber festgeklebt.
+Die LED's habe ich mit jeweils einem kleinen tropfen Sekundenkleber in den led ring geklebt.
+Den Arduino habe ich auch mit einem kleinen abstandshaltern mit Blechschrauben festgeschraubt.
+Für den DFPlayer habe ich eine kleine Platte gedruckt die etwas länger ist als der DFPlayer um den DFPlayer mit zwei Blechschrauben zu befestigen. Die Platte hält den DFPlayer sogesehen fest.
+Die 7 Segment anzeige habe ich in das von mir geänderte Front Panel eingeschraubt.
+Die Lautsprecher habe ich schräg in das Front Panel eingeschraubt damit die Membranen sogesehen durch den "grill-left" und "grill-right" hindurchschauen.
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+### - Der Code
+Den Code stelle ich hier zur vefügung, sobald er soweit ist. Der Code der gerade auf dem Arduino läuft ist eigentlich nur ein Test Code und ich glaube jeder der sich mit dem Arduino auskennt würde mich umbringen dafür :D (aber es funktioniert)
 
+Beim Code schreibe ist nur das zu beachten, was ich oben unter den Schaltplan geschrieben habe, sonst funktioniert es nicht.
 
-## KaTeX
+> ==VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
+z.b. **`SoftwareSerial mySoftwareSerial(11, 10); // RX, TX`** funktioniert nicht du musst
+ **`SoftwareSerial mySoftwareSerial(10, 11); // RX, TX`** verwenden
+Also **RX = TX** und **TX = RX** (wieso auch immer?)==
 
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
+## Schlusswort
+Ich hoffe diese Dokumentation hilft beim nachbau des Portal Radios. Das Radio ist ein wirklicher Hingucker und das es den Radiosong abspielt macht es noch um einiges cooler.
 
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
+Fragen oder Anregungen gerne auf GitHub, Discord (MrTiiv), [Instagram](https://www.instagram.com/mrtiiv/), [Steam](https://steamcommunity.com/id/MrTiiv).
 
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
+ >This was a triumph  
+I'm making a note here; "Huge success"
 
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzc1MTg0MTQ1LC0xMzQ4NzEyNzE4LC0xOD
+E4MjE0NjcxLC0zNjMwNzk4ODIsMTEzMTU2NTMwMywzNDYyNDU4
+MDEsNTc3ODgzNzkwLDUyNDcwNjEzNCwtMTIxOTEyNjQ1MCwtMj
+AwNjE4OTEzMCwtMTQxNzUzNDEyOSwtMTM3Mzk1MzkzMywxMzM1
+MjE4NDQwLC0xMjY1NzM5MzA2LC04NTk1NjUzNjQsMjI5OTU0Mj
+U1LDE1OTQyNjkyOTcsMTg3NTQ0MjQ1MSwzMjc5MTYxNjksMTQ2
+MjY4NDUzNV19
+-->
