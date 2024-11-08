@@ -23,7 +23,7 @@ Verwendete Drucker:
 -   „Shell“ und „Base“ wurden mit dem Bambu Lab X1C gedruckt, können aber auch mit dem Bambu Lab A1 gedruckt werden. Beide haben eine Druckfläche von 256x256x256 mm.
 -   Kleinere Teile wurden mit dem Bambu Lab A1 Mini (Druckfläche 180x180x180 mm) gedruckt.
 
-### - Bekannte Probleme
+### Bekannte Probleme
 Da dies mein erstes Projekt ist, kenne ich mich mit der verwendeten Mikroelektronik noch wenig aus. Ein nerviges Problem ist der DFPlayer. Beim Einschalten gibt er ein Störgeräusch von sich, bevor er den Song abspielt. Auch während des Songs ist ein leises, aber hörbares Störgeräusch vorhanden, insbesondere bei geringer Lautstärke. Bis jetzt habe ich dafür noch keine Lösung gefunden.
 Wenn man den Verstärker PAM8403 bis ganz an Ende zu dem Rastpunkt dreht und ihn dann wieder aufdreht Startet der Arduino aus unbekannten gründen neu. Ich habe das Problem bissher noch nicht behoben und habe bissher auch noch keinen Lösungsansatz.
   
@@ -93,13 +93,13 @@ Folgende Druckeinstellungen habe ich bei der Base geändert:
 
 ![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Print%20Settings%20Base.png?raw=true)
 
-### -Shell
+### Shell
 Die Shell muss mit Supports gedruckt werden. Verwendet wurden die Supports "Baum". 
 Bei der Druckbetthaftung habe ich die Schürzenschlaufen auf 5 und die Nahtposition auf zufällig. 
 
 ![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Print%20Settings%20Shell.png?raw=true)
 
-### -Zusammenbau
+### Zusammenbau
 Nachdem alles gedruckt wurde sollte man 10 einzelne Teile vor sich liegen haben
 - "base"
 - "shell"
@@ -129,15 +129,16 @@ Die Löcher für den ein/aus Schalter so wie das Loch für den Poti hinten und d
 ### Schaltplan
 Wie bereits am anfang erwähnt, habe ich die Elektronik von einer DIY Anleitung für ein Internetradio von AZ Delivery abgeschaut. Aber bevor ich die Elektronik verdrahtet und einegabut habe, habe ich mit der Software **Fritzing** einen Schaltplan erstellt den ich euch hier zur verfügung stelle. 
 
-![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Portal%20Radio%20Sketch%20V0.1%20Schematic.png?raw=true)==VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
+![Alt](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Bilder%20f%C3%BCr%20Doku/Portal%20Radio%20Sketch%20V0.1%20Schematic.png?raw=true)
+> VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
 z.b. **`SoftwareSerial mySoftwareSerial(11, 10); // RX, TX`** funktioniert nicht du musst
  **`SoftwareSerial mySoftwareSerial(10, 11); // RX, TX`** verwenden
-Also **RX = TX** und **TX = RX** (wieso auch immer?)==
+Also **RX = TX** und **TX = RX** (wieso auch immer?)
 
 Der Schaltplan ist 1:1 zu meinem jetzigen Portal Radio.
 Das Step Up Module muss VOR dem einbauen eingestellt werden. Ich habe die ganze Elektronik gelötet, das Step Up Module hätte ich genau so wie den Akku und die Lautsprecher Steckbar machen sollen falls das Modul nochmal nachgestellt werden muss. Die Spannung habe ich mit Wago 221 Klemmen verteilt die ich auf der Base aufgeklebt habe (please don't judge me)
 
-### - Das einbauen der Elektronik
+### Das einbauen der Elektronik
 
 An sich gibt es keine feste Position für die Elektronik, das muss man am ende selbst entscheiden.
 Ich habe den Charger und das Step-Up Module mit kleinen abstandshaltern wegen den Lötpunkten an der Base mit Sekundenkleber festgeklebt.
@@ -147,15 +148,15 @@ Für den DFPlayer habe ich eine kleine Platte gedruckt die etwas länger ist als
 Die 7 Segment anzeige habe ich in das von mir geänderte Front Panel eingeschraubt.
 Die Lautsprecher habe ich schräg in das Front Panel eingeschraubt damit die Membranen sogesehen durch den "grill-left" und "grill-right" hindurchschauen.
 
-### - Der Code
+### Der Code
 Den Code stelle ich hier zur vefügung, sobald er soweit ist. Der Code der gerade auf dem Arduino läuft ist eigentlich nur ein Test Code und ich glaube jeder der sich mit dem Arduino auskennt würde mich umbringen dafür :D (aber es funktioniert)
 
 Beim Code schreibe ist nur das zu beachten, was ich oben unter den Schaltplan geschrieben habe, sonst funktioniert es nicht.
 
-> ==VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
+> VORSICHT! Bei der Programmierung des DFPlayers ist RX und TX wieso auch immer gedreht.
 z.b. **`SoftwareSerial mySoftwareSerial(11, 10); // RX, TX`** funktioniert nicht du musst
  **`SoftwareSerial mySoftwareSerial(10, 11); // RX, TX`** verwenden
-Also **RX = TX** und **TX = RX** (wieso auch immer?)==
+Also **RX = TX** und **TX = RX** (wieso auch immer?)
 
 ## Schlusswort
 Ich hoffe diese Dokumentation hilft beim nachbau des Portal Radios. Das Radio ist ein wirklicher Hingucker und das es den Radiosong abspielt macht es noch um einiges cooler.
@@ -165,12 +166,3 @@ Fragen oder Anregungen gerne auf GitHub, Discord (MrTiiv), [Instagram](https://w
  >This was a triumph  
 I'm making a note here; "Huge success"
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc1MTg0MTQ1LC0xMzQ4NzEyNzE4LC0xOD
-E4MjE0NjcxLC0zNjMwNzk4ODIsMTEzMTU2NTMwMywzNDYyNDU4
-MDEsNTc3ODgzNzkwLDUyNDcwNjEzNCwtMTIxOTEyNjQ1MCwtMj
-AwNjE4OTEzMCwtMTQxNzUzNDEyOSwtMTM3Mzk1MzkzMywxMzM1
-MjE4NDQwLC0xMjY1NzM5MzA2LC04NTk1NjUzNjQsMjI5OTU0Mj
-U1LDE1OTQyNjkyOTcsMTg3NTQ0MjQ1MSwzMjc5MTYxNjksMTQ2
-MjY4NDUzNV19
--->
