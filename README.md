@@ -54,6 +54,7 @@ Hier sind die Teile die ich für das Radio gekauft habe, eine Mischung vom Amazo
 -[JST XH 2 Polig Kabelstecker](https://de.aliexpress.com/item/1005006577211209.html) [²] 
 -[Wippschalter Rund](https://amzn.eu/d/0qvCGKB)  
 -[verwendeter Akku](https://www.conrad.de/de/p/reely-modellbau-akkupack-lipo-3-7-v-1000-mah-zellen-zahl-1-30-c-bec-2582341.html) [³]
+
 -[~350g PLA Schwarzes Filament](https://amzn.eu/d/ibRLTVA)
 -[~265g PLA Weißes Filament](https://amzn.eu/d/6HExSpr)
 -[~30g PLA Durchsichtiges Filament](https://amzn.eu/d/5HmzEyD)
