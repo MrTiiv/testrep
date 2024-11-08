@@ -43,24 +43,23 @@ Das Radio soll folgende Funktionen erfüllen:
   
 Hier sind die Teile die ich für das Radio gekauft habe, eine Mischung vom Amazon und AliExpress:  
   
--[7 Segment Anzeige TM1637 Blau](https://www.amazon.de/dp/B09X1Z8CC8?ref=ppx_yo2ov_dt_b_fed_asin_title)  
--[USB Typ C Batterielademodul TP4056](https://amzn.eu/d/bJx8FN1) [¹]
--[Step Up Module MT3608](https://amzn.eu/d/h4YCcV0)  
--[AZ Delivery Mikrocontroller AZ-ATmega 328](https://amzn.eu/d/12fmeU2)  
--[2x AZ Delivery DFPlayer Mini 3 Watt Lautsprecher](https://amzn.eu/d/aCnC54G)  
--[5mm LED Blau](https://amzn.eu/d/fTzluys)  
--[DFPlayer Mini](https://de.aliexpress.com/item/1005006181511315.html?)  
--[PAM8403 Audio Verstärker](https://de.aliexpress.com/item/1005006135778016.html)  
--[JST XH 2 Polig Kabelstecker](https://de.aliexpress.com/item/1005006577211209.html) [²] 
--[Wippschalter Rund](https://amzn.eu/d/0qvCGKB)  
--[verwendeter Akku](https://www.conrad.de/de/p/reely-modellbau-akkupack-lipo-3-7-v-1000-mah-zellen-zahl-1-30-c-bec-2582341.html) [³]
-
--[~350g PLA Schwarzes Filament](https://amzn.eu/d/ibRLTVA)
--[~265g PLA Weißes Filament](https://amzn.eu/d/6HExSpr)
--[~30g PLA Durchsichtiges Filament](https://amzn.eu/d/5HmzEyD)
--[~2g PETG Schwarzes Filament](https://amzn.eu/d/5IXwTd8)[⁴]
--Sekundenkleber (zum Ankleben der Elektronik so wie der LED's)
--Blechschrauben (zum Anschrauben der Elektronik)
+- [7 Segment Anzeige TM1637 Blau](https://www.amazon.de/dp/B09X1Z8CC8?ref=ppx_yo2ov_dt_b_fed_asin_title)  
+- [USB Typ C Batterielademodul TP4056](https://amzn.eu/d/bJx8FN1) [¹]
+- [Step Up Module MT3608](https://amzn.eu/d/h4YCcV0)  
+- [AZ Delivery Mikrocontroller AZ-ATmega 328](https://amzn.eu/d/12fmeU2)  
+- [2x AZ Delivery DFPlayer Mini 3 Watt Lautsprecher](https://amzn.eu/d/aCnC54G)  
+- [5mm LED Blau](https://amzn.eu/d/fTzluys)  
+- [DFPlayer Mini](https://de.aliexpress.com/item/1005006181511315.html?)  
+- [PAM8403 Audio Verstärker](https://de.aliexpress.com/item/1005006135778016.html)  
+- [JST XH 2 Polig Kabelstecker](https://de.aliexpress.com/item/1005006577211209.html) [²] 
+- [Wippschalter Rund](https://amzn.eu/d/0qvCGKB)  
+- [verwendeter Akku](https://www.conrad.de/de/p/reely-modellbau-akkupack-lipo-3-7-v-1000-mah-zellen-zahl-1-30-c-bec-2582341.html) [³]
+- [~350g PLA Schwarzes Filament](https://amzn.eu/d/ibRLTVA)
+- [~265g PLA Weißes Filament](https://amzn.eu/d/6HExSpr)
+- [~30g PLA Durchsichtiges Filament](https://amzn.eu/d/5HmzEyD)
+ -[~2g PETG Schwarzes Filament](https://amzn.eu/d/5IXwTd8)[⁴]
+- Sekundenkleber (zum Ankleben der Elektronik so wie der LED's)
+- Blechschrauben (zum Anschrauben der Elektronik)
 
 [¹]: Vorsicht!, mit diesem Lademodul kann man nur mit einem USB A auf USB C Kabel laden, nicht mit einem USB C - USB C Kabel
 [²]: um den Akku und die Lautsprecher abtrennbar zu machen, ich habe die Originalen Stecker der jeweiligen Komponenten abgeschnitten und diesen angelötet, schlauer wäre gewesen gleich den Richtigen Stecker zu bestellen aber egal ^^
