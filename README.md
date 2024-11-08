@@ -7,14 +7,11 @@ Zunächst ein Dank an:
 - @monion für das Helfen mit dem Code (er ist nicht verantwortlich für den endgültigen Code ;D )
 - @Chair Gaming für allgemeine Hilfe
 
-Hinweis: 
+**Hinweis: 
 Hier kannst du nur meine modifizierten Teile herunterladen. Bitte lade das komplette Projekt vom Original-Autor herunter! 
-[**https://www.myminifactory.com/object/3d-print-portal-radio-50006**](https://www.myminifactory.com/object/3d-print-portal-radio-50006)
+[**https://www.myminifactory.com/object/3d-print-portal-radio-50006**](https://www.myminifactory.com/object/3d-print-portal-radio-50006)**
   
-## Allgemeine Informationen
-  
-**HIER KANNST DU NUR MEINE MODIFIZIERTEN PARTS HERUNERLADEN, BITTE LADE DAS KOMPLETTE PROJEKT VOM ORIGIALEN AUTOR HERUNTER!**  
-  
+## Allgemeine Informationen  
 Für die Elektronik habe ich mich an einer Anleitung für ein DIY-Radio von AZ-Delivery orientiert und es so angepasst, wie es für mich passt: [https://www.az-delivery.de/products/internet-radio-mit-dem-esp32](https://www.az-delivery.de/products/internet-radio-mit-dem-esp32).
 
 Verwendete Drucker:
