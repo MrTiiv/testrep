@@ -146,11 +146,17 @@ Das Step Up Module muss VOR dem einbauen eingestellt werden. Ich habe die ganze 
 ### Das einbauen der Elektronik
 
 An sich gibt es keine feste Position für die Elektronik, das muss man am ende selbst entscheiden.
+
 Ich habe den Charger und das Step-Up Module mit kleinen abstandshaltern wegen den Lötpunkten an der Base mit Sekundenkleber festgeklebt.
+
 Die LED's habe ich mit jeweils einem kleinen tropfen Sekundenkleber in den led ring geklebt.
+
 Den Arduino habe ich auch mit einem kleinen abstandshaltern mit Blechschrauben festgeschraubt.
+
 Für den DFPlayer habe ich eine kleine Platte gedruckt die etwas länger ist als der DFPlayer um den DFPlayer mit zwei Blechschrauben zu befestigen. Die Platte hält den DFPlayer sogesehen fest.
+
 Die 7 Segment anzeige habe ich in das von mir geänderte Front Panel eingeschraubt.
+
 Die Lautsprecher habe ich schräg in das Front Panel eingeschraubt damit die Membranen sogesehen durch den "grill-left" und "grill-right" hindurchschauen.
 
 ### Der Code
