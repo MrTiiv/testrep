@@ -70,7 +70,7 @@ Hier sind die Teile die ich für das Radio gekauft habe, eine Mischung vom Amazo
 ## 3D Druck 
 
 ### Info und änderungen
-Abgeändert habe ich das *"front-panel"* damit das Display vorne rein passt so wie den *"top-button"* damit man den Knopf oben für die Lautstärke drehen kann und das der Audio Verstärker PAM8403 da Perfekt reinpasst. Diese änderungen kannst du hier auf GitHub herunterladen. 
+Abgeändert habe ich das *"[front-panel](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Modified%203D%20Print%20Parts/front-panel-modified-for-displayl.stl)"* damit das Display vorne rein passt so wie den *"[top-button](https://github.com/MrTiiv/Portal-Radio-Doku-German/blob/main/Modified%203D%20Print%20Parts/top-button-modified-for-PAM8403.stl)"* damit man den Knopf oben für die Lautstärke drehen kann und das der Audio Verstärker PAM8403 da Perfekt reinpasst. Diese änderungen kannst du hier auf GitHub herunterladen. 
 Dadurch das ich das Display in das Radio Montiert habe müssen folgende Teile die du von Aibot auf MMF herunterlädtst nicht gedruck werden:
 - "ledholder-screen"
 - "screen-main"
