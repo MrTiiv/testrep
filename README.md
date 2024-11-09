@@ -30,7 +30,7 @@ Wenn man den Verstärker PAM8403 bis ganz an Ende zu dem Rastpunkt dreht und ihn
 
 ### Funktion
   
-Das Radio soll folgende Funktionen erfüllen:
+Das Radio hat folgende Funktionen:
 
 -   Beim Einschalten leuchten die LEDs am Ring blau auf, die 7-Segment-Anzeige zeigt „85.2“ an, und die Radiomusik aus dem Spiel beginnt zu spielen.
 -   Die blaue LED an der Front leuchtet, sobald der Code „hochgefahren“ ist, als Indikator.
