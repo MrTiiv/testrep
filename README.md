@@ -62,7 +62,7 @@ Hier sind die Teile die ich für das Radio gekauft habe, eine Mischung vom Amazo
 
 [²]: Um den Akku und die Lautsprecher abtrennbar zu machen, habe ich die Originalen Stecker der jeweiligen Komponenten abgeschnitten und diesen angelötet, schlauer wäre gewesen gleich den Richtigen Stecker zu bestellen aber egal ^^.
 
-[³]: Alle Akkus die ich auf Amazon bestellt habe haben mit diesem Projekt nicht funktioniert. Der Akku war immer zu schwach und das Radio wurde bei hoher Lautstärke abgeschaltet. Deswegen der Reely Modellbauakku von Conrad.. eine Powerbank hätte es glaube ich auch getan.
+[³]: Alle Akkus die ich auf Amazon bestellt habe haben mit diesem Projekt nicht funktioniert. Der Akku war immer zu schwach und das Radio wurde bei hoher Lautstärke abgeschaltet. Deswegen der Reely Modellbauakku von Conrad. Eine Powerbank hätte es glaube ich auch getan.
 
 [⁴]: Das PETG Filament ist für das Aperture Logo vorne am Radio damit man es sieht. Man sieht es mit dem PETG Filament zwar, es kommt aber tatsächlich drauf an wie man drauf schaut. Aufällig ist es nicht also kann man dafür auch anderes Filament z.b. in einer anderen Farbe verwenden.
 
